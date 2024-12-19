@@ -1,0 +1,19 @@
+@Library("my-shared-library") _
+
+pipeline {
+    node 
+
+    environment {
+        git_url = 'https://github.com/thanikai-devops/Devops_ansible.git'
+        git_branch = 'dev-jenkins'
+    }
+    stages{
+        stage("Build stage "){
+            steps{
+                script{
+                    deploy(dev)
+                }
+            }
+        }
+    }
+}
