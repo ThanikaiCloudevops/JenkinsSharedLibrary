@@ -1,0 +1,53 @@
+contest:
+  repourl: https://github.com/SciflareTechnologies/FSP-contest-module.git
+  credentialsId: Github_Pat_Token
+  branch: development
+  # ECR_repo: 123456789012.dkr.ecr.us-east-1.amazonaws.com/fsp-contest
+
+cron:
+  repourl: https://github.com/SciflareTechnologies/FSP-cron-module.git
+  credentialsId: Github_Pat_Token
+  branch: development
+  # ECR_repo: 123456789012.dkr.ecr.us-east-1.amazonaws.com/fsp-cron
+
+game:
+  repourl: https://github.com/SciflareTechnologies/FSP-game-module.git
+  credentialsId: Github_Pat_Token
+  branch: development
+  # ECR_repo: 123456789012.dkr.ecr.us-east-1.amazonaws.com/fsp-game
+
+scorecard:
+  repourl: https://github.com/SciflareTechnologies/FSP-scorecard-module.git
+  credentialsId: Github_Pat_Token
+  branch: development
+  # ECR_repo: 123456789012.dkr.ecr.us-east-1.amazonaws.com/fsp-scorecard
+
+master:
+  repourl: https://github.com/SciflareTechnologies/FSP-master-module.git
+  credentialsId: Github_Pat_Token
+  branch: development
+  # ECR_repo: 123456789012.dkr.ecr.us-east-1.amazonaws.com/fsp-scorecard
+
+master-data:
+  repourl: https://github.com/SciflareTechnologies/FSP-master-data-module.git
+  credentialsId: Github_Pat_Token
+  branch: development
+  # ECR_repo: 123456789012.dkr.ecr.us-east-1.amazonaws.com/fsp-scorecard
+
+user:
+  repourl: https://github.com/SciflareTechnologies/FSP-user-module.git
+  credentialsId: Github_Pat_Token
+  branch: development
+  # ECR_repo: 123456789012.dkr.ecr.us-east-1.amazonaws.com/fsp-scorecard
+
+user-auth:
+  repourl: https://github.com/SciflareTechnologies/FSP-user-auth-module.git
+  credentialsId: Github_Pat_Token
+  branch: development
+  # ECR_repo: 123456789012.dkr.ecr.us-east-1.amazonaws.com/fsp-scorecard
+
+wallet:
+  repourl: https://github.com/SciflareTechnologies/FSP-wallet-module.git
+  credentialsId: Github_Pat_Token
+  branch: development
+  # ECR_repo: 123456789012.dkr.ecr.us-east-1.amazonaws.com/fsp-scorecard

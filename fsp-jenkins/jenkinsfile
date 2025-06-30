@@ -1,0 +1,32 @@
+@Library('fsp_shared_library') _
+pipeline {
+    agent any 
+
+    parameters {
+        choice(name: "SERVICE", choices:['contest','cron','scorecard','game','master','master-data','user','user-auth','wallet'],description: 'Name of the microservice to build (e.g. contest, cron, game)')
+        string(name: 'BRANCH', defaultValue: 'development', description: 'Git branch to checkout')
+    }
+    stages{
+        stage('checkout'){
+            steps{
+                script{
+                    checkStageConstant(service: params.SERVICE, branch: params.BRANCH)
+                }
+            }
+        }
+        stage('Build'){
+            steps{
+                script{
+                    build.call(service: params.SERVICE)
+                }
+            }
+        }
+        stage('Start Service - Development'){
+            steps{
+                dir(params.SERVICE){
+                    sh "pm2 start --name ${params.SERVICE} dist/src/main.js"
+                }
+            }
+        }
+    }
+}
